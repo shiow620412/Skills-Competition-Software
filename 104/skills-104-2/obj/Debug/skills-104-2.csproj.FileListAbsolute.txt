@@ -1,0 +1,9 @@
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\bin\Debug\skills-104-2.exe.config
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\bin\Debug\skills-104-2.exe
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\bin\Debug\skills-104-2.pdb
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\obj\Debug\skills-104-2.csprojResolveAssemblyReference.cache
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\obj\Debug\skills_104_2.Form1.resources
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\obj\Debug\skills_104_2.Properties.Resources.resources
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\obj\Debug\skills-104-2.csproj.GenerateResource.Cache
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\obj\Debug\skills-104-2.exe
+D:\GitHub\Skills-Competition-Software\104\skills-104-2\obj\Debug\skills-104-2.pdb

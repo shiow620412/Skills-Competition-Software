@@ -1,0 +1,53 @@
+1.求一個數除以2的n次方的餘數
+Ans:X % 2^N => X AND 2^-1 即為所求
+
+2.快速判斷一個數是否為2的次方
+Ans:X AND X-1 如果為0 則此數為2的次方 反之
+
+3.取得容器內某類型的物件
+List<類型> 變數名稱 = 容器.OfType<類型>().ToList()
+
+4.新增String.ToInt(),記得加上public static
+public static class Extension
+    {
+        public static int ToInt(this string str)
+        {
+            return int.Parse(str);
+        }
+    }
+
+5.大數運算速解(using之前須加入參考)
+using System.Numerics; 即可使用BigInteger,此類別可表示任意大、帶正負的整數
+此類別還有屬性(IsPowerOfTwo)可判斷此數是否為2的次方
+
+6.String.Split字串切割自動略過空白字串
+String.Split( new String[] { '字串' } , StringSplitOptions.RemoveEmptyEntries);
+
+7.將字串陣列一次轉成整數陣列
+Array.ConvertAll(要轉的陣列,x=>int.Parse(x))
+
+8.拖曳取得檔案功能
+需在物件的DragEnter的事件中新增e.Effect = DragDropEffects.Copy;
+接著在DragDrop的事件中新增string[] 變數名稱 =(e.Data.GetData("FileNameW"))as string[];
+變數名稱[0]即為拖曳進來的檔案路徑
+
+9.將圖片轉為Base64
+MemoryStream ms = new MemoryStream();
+Image img=圖片
+接著將圖片存入MemoryStream
+img.Save(ms,ImageFormat.圖片格式)
+byte[] arr = ms.ToArray();
+Conver.ToBase64String(arr); => 這行執行結果即為圖片的Base64
+
+10.判斷字串中是否含有中文
+Regex.IsMatch("[\u4e00-\u9fa5]");
+
+11.計算字串中某字元出現幾次
+法1.
+	字串.Split("字元").Length-1;
+法2.
+	MatchCollection mc;
+	Regex reg = new Regex("字元");
+	mc = reg.Matches("字串");
+	mc.Count;
+
