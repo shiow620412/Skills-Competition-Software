@@ -4,3 +4,9 @@ D:\GitHub\Skills-Competition-Software\104\skills-104-4\bin\Debug\skills-104-4.pd
 D:\GitHub\Skills-Competition-Software\104\skills-104-4\obj\Debug\skills-104-4.csprojResolveAssemblyReference.cache
 D:\GitHub\Skills-Competition-Software\104\skills-104-4\obj\Debug\skills-104-4.exe
 D:\GitHub\Skills-Competition-Software\104\skills-104-4\obj\Debug\skills-104-4.pdb
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\104\skills-104-4\bin\Debug\skills-104-4.exe.config
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\104\skills-104-4\bin\Debug\skills-104-4.exe
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\104\skills-104-4\bin\Debug\skills-104-4.pdb
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\104\skills-104-4\obj\Debug\skills-104-4.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\104\skills-104-4\obj\Debug\skills-104-4.exe
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\104\skills-104-4\obj\Debug\skills-104-4.pdb
