@@ -100,28 +100,25 @@ namespace skills_104_4
                 {
                     return 1;
                 }
-                else if (val == up | val == down)
+                else if (val >= up | val <= down)
                     return 0;
                 else if(val > mid)
                 {
                     float add = 1f / (mid -up);
                     float output = 1;
-                    int middle = mid;                    
-                    while(middle != val)
+                 
+                   for(int i = mid+1; i <= val;i++)
                     {
-                        middle++;
-                        output -= add;
+                        output += add;
                     }
                     return output;
                 }
                 else
                 {
-                    float add = 1f / (mid - down);
-                    float output = 0;
-                    int dn = down;
-                    while (dn != val)
+                    float add = 1f / (down - mid);
+                    float output = 1;
+                    for (int i = mid-1; i >= val; i--)
                     {
-                        dn++;
                         output += add;
                     }
                     return output;

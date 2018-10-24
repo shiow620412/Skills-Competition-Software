@@ -1,0 +1,9 @@
+C:\Users\DavidHsu\Desktop\103\skills-103-5\bin\Debug\skills-103-5.exe.config
+C:\Users\DavidHsu\Desktop\103\skills-103-5\bin\Debug\skills-103-5.exe
+C:\Users\DavidHsu\Desktop\103\skills-103-5\bin\Debug\skills-103-5.pdb
+C:\Users\DavidHsu\Desktop\103\skills-103-5\obj\Debug\skills-103-5.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Desktop\103\skills-103-5\obj\Debug\skills_103_5.Form1.resources
+C:\Users\DavidHsu\Desktop\103\skills-103-5\obj\Debug\skills_103_5.Properties.Resources.resources
+C:\Users\DavidHsu\Desktop\103\skills-103-5\obj\Debug\skills-103-5.csproj.GenerateResource.Cache
+C:\Users\DavidHsu\Desktop\103\skills-103-5\obj\Debug\skills-103-5.exe
+C:\Users\DavidHsu\Desktop\103\skills-103-5\obj\Debug\skills-103-5.pdb

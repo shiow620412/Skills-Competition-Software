@@ -1,0 +1,9 @@
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\bin\Debug\skills-103-1.exe.config
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\bin\Debug\skills-103-1.exe
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\bin\Debug\skills-103-1.pdb
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\obj\Debug\skills-103-1.csprojResolveAssemblyReference.cache
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\obj\Debug\skills_103_1.Form1.resources
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\obj\Debug\skills_103_1.Properties.Resources.resources
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\obj\Debug\skills-103-1.csproj.GenerateResource.Cache
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\obj\Debug\skills-103-1.exe
+D:\GitHub\Skills-Competition-Software\103\skills-103-1\obj\Debug\skills-103-1.pdb
