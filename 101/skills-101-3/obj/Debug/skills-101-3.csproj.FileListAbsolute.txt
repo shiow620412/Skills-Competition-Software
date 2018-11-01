@@ -1,0 +1,6 @@
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-3\bin\Debug\skills-101-3.exe.config
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-3\bin\Debug\skills-101-3.exe
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-3\bin\Debug\skills-101-3.pdb
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-3\obj\Debug\skills-101-3.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-3\obj\Debug\skills-101-3.exe
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-3\obj\Debug\skills-101-3.pdb

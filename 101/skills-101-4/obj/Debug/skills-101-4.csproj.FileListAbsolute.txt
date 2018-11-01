@@ -1,0 +1,9 @@
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\bin\Debug\skills-101-4.exe.config
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\bin\Debug\skills-101-4.exe
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\bin\Debug\skills-101-4.pdb
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\obj\Debug\skills-101-4.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\obj\Debug\skills_101_4.Form1.resources
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\obj\Debug\skills_101_4.Properties.Resources.resources
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\obj\Debug\skills-101-4.csproj.GenerateResource.Cache
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\obj\Debug\skills-101-4.exe
+C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\101\skills-101-4\obj\Debug\skills-101-4.pdb

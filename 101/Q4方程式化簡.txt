@@ -1,0 +1,5 @@
+x(Y2-Y1)-y(X2-X1) = -Y1X2+X1Y2
+
+¥æÂI®y¼Ð(N,O)
+N=(ce-bf)/(ae-bd)
+O=(cd-af)/(bd-ae)
