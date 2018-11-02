@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{68B32501-6296-4334-A716-DBCCB0E06670}</ProjectGuid>
+    <ProjectGuid>{3E536EA6-DFA2-466D-A7D0-B99A5FDF0E8E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>skills_101_5</RootNamespace>
-    <AssemblyName>skills-101-5</AssemblyName>
+    <RootNamespace>skills_101_6</RootNamespace>
+    <AssemblyName>skills-101-6</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
