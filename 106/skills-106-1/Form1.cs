@@ -75,7 +75,8 @@ namespace skills_106_1
             foreach (var i in d)
                 textBox5.Text += i.Index.ToString().PadLeft(4);
         }
-
+        //int[] test = new int[] { 28, 67, 66, 12, 41, 28, 72, 28, 90, 83, 39, 50, 69, 83, 61 };
+        //int[] test2 = new int[] { 57, 33, 46, 71, 88, 72, 2, 67, 44, 44, 12, 81, 32, 25, 34 };
         private void button1_Click(object sender, EventArgs e)
         {
             int N = int.Parse(textBox1.Text);
@@ -86,6 +87,7 @@ namespace skills_106_1
             for(int i =0;i<d.Length;i++)
             {
                 d[i] = new Data(rnd.Next(0, 101), rnd.Next(0, 101));                
+                //d[i] = new Data(test[i], test2[i]);
                 textBox3.Text += d[i].Math.ToString().PadLeft(4);                
                 textBox4.Text += d[i].English.ToString().PadLeft(4);
             }
