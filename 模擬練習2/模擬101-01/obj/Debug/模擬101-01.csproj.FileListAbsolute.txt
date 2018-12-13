@@ -1,0 +1,10 @@
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\bin\Debug\模擬101-01.exe.config
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\bin\Debug\模擬101-01.exe
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\bin\Debug\模擬101-01.pdb
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101-01.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101_01.Form1.resources
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101_01.Properties.Resources.resources
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101-01.csproj.GenerateResource.cache
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101-01.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101-01.exe
+C:\Users\Wind\Desktop\模擬練習2\模擬101-01\obj\Debug\模擬101-01.pdb

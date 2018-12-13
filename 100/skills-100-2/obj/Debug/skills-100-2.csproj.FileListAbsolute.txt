@@ -6,3 +6,13 @@ C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\
 C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.csproj.GenerateResource.Cache
 C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.exe
 C:\Users\DavidHsu\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.pdb
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\bin\Debug\skills-100-2.exe.config
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\bin\Debug\skills-100-2.exe
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\bin\Debug\skills-100-2.pdb
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.csprojAssemblyReference.cache
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills_100_2.Form1.resources
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills_100_2.Properties.Resources.resources
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.csproj.GenerateResource.cache
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.exe
+C:\Users\Wind\Documents\GitHub\Skills-Competition-Software\100\skills-100-2\obj\Debug\skills-100-2.pdb

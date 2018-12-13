@@ -1,0 +1,9 @@
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\bin\Debug\b434_圖片的梯度.exe.config
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\bin\Debug\b434_圖片的梯度.exe
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\bin\Debug\b434_圖片的梯度.pdb
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\obj\Debug\b434_圖片的梯度.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\obj\Debug\b434_圖片的梯度.Form1.resources
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\obj\Debug\b434_圖片的梯度.Properties.Resources.resources
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\obj\Debug\b434_圖片的梯度.csproj.GenerateResource.Cache
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\obj\Debug\b434_圖片的梯度.exe
+C:\Users\DavidHsu\Desktop\b434_圖片的梯度\obj\Debug\b434_圖片的梯度.pdb

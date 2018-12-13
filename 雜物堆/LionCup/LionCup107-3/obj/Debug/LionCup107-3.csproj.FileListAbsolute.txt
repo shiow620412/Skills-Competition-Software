@@ -1,0 +1,5 @@
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-3\bin\Debug\LionCup107-3.exe.config
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-3\bin\Debug\LionCup107-3.exe
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-3\bin\Debug\LionCup107-3.pdb
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-3\obj\Debug\LionCup107-3.exe
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-3\obj\Debug\LionCup107-3.pdb

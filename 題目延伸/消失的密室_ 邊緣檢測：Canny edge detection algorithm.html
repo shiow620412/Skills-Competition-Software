@@ -1,0 +1,2555 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://stevenchen886.blogspot.com/2018/08/hough-transform.html -->
+<html class="v2" dir="ltr" lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/2727757643-css_bundle_v2.css" rel="stylesheet" type="text/css">
+<meta content="width=1100" name="viewport">
+
+<meta content="blogger" name="generator">
+<link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAFtElEQVR4Xu2bS2hcVRiAv5k8miZtU9MkprGpTYw2ZhEKRltLtVqykOLSpYgu7EIENwquXLgQQRGFUkQXinThQlyVIBJqkpY2ramUKmmb9zvTJM1z8k5m5M/pkTLGnHNnziTjzPwwzDBz753zf//znHOvj4fk0plnvqpg4J39jGc+/H2yfB6hcLWbsnMvfHPjPa2TTz40vHW0OiMzdDrfN//6gdBwTaF/ev37ZJPxUH540F96azqce35t1V9f9921tnVFf3v72feLfJMfFIfuF+32zft2+FaSTfd1fZbCWcyGc8Oj/n1jY+FHPnv5298/94nb57F4MpktH2lN7Qlz5DT5hs4Ur2SFVjKS2fKRALQnrPiz1nyhM/5wUvq7pVJpAGkPSIdAOgekk6BlwvzvwzJzIHcvZO8EfyZkZEFmNmRkq3d/xsbnhsMQDkFoFVaXYXURludhSV5BWF2CUAiIn43cVIE9JXDgCBSUQU4u7MyH3ALIK1DvAmYjCa3B2rJSdn4CZgIwMQjjvTDWCbNjCowcFyeJDUBWjlKypAoqX4TiSjcAxrrh3h2YHIDgBMxNwfyU8hDHEhuAvaVQXgvlx6DiOBQcdBMCouyseEMfBDphqA0GbyoPcSzRAdCWL62Gp09B+VEoqYZdRW6GJ2GxHITpEQWg5xr8VQ+BdpUvJG84kugAaMtXHIMnTkDxk5CzBzJ3uBmWToxLcyo3CICW89DbCotBlTcciTcAOtuL5avroMKx5SOV0klS3P/6j9B5WSXIhWlH6oM3ADrbi+WrXoKSw24tH6mWLpP3e6GzGdofvO73bROAwnKoqoOnTkLlg6TnbCibXGhuQpXFjmblCUN/OusPvHmAxHrNaQXgYC1ILtgKkV5AegUJgcaz0HXVWX/gDcD+aqh9TQGQrL/bkPWX5yA4rrq7jSQ7F3YVQnaeHca+Vmj+GtqbYGYUJEnGKN4AlB2B428qAFLzpePbTKSOS+xO9G98lFxDGqiCx+3UuNcOty4oAP1/qDIZo3gDcOg5OPWuArBZiyuNjCSuoVt2AB6rgX2H1HxiM5Hkt54Im6C9Uf1HjOINQOUJeOVDBWCzSc7ATbj6A3RfsQsB6SKffwPEwxIagCj+6kcKwGYSLwDi8v03VWMkFUGH1spi1HMFbx5gCyBeISBJLzgKgbvQ1QKTg8oM04Go5wrxAaC9w3US1J2hTIqG76jwEpkahv5WCMgMchAWZ60zQ3wBuC6DujMUl1+cUb2AiHyeGoSeFrjxM4zcThAA1sOI8UA9e5Tq8OsXqlGylPh6gOUgYj5Mzx4FQP0n0HHJ+pLJAUCrKwAufKz6BEtJA/C0M2RbBi3pOz8s7QGJFgKmMmhyAa+zxYTzAFMjZALgdbaYMABsW2FbALazxYQBYDsZMgHQIWA7W4w7ANfTYVcAZI4gbbEA+OVTtXRmKd76ANcLIqZB6hxgCoHlBbV/IAAunoXe66Yr//O7NwCul8RMw7RNgrJPIGsDAuDK9yAhaCneALheFDUN0rYMyi5yoE0BaP0JRtpMV47SA7ZrWdykzng33GlQADqvwMSA6YwoAWzXxohJHYn5xnMKwPoy/ILpjCgBbPXWmEkNuYNEFkNE8YYvobvFdMa/fveWA7Z6c9SkTjAi9oftY19f2hsAfVa8t8dNimvLj3ZA12Vl+Z5WtTboUaIDEO8bJExKaMvL8vjtiyCWlw1UWSv0KNEBiPQE6Q9kr1Dqtuz17dhtd5eYabC6w5M1v/UN0lmV5KTmS9mTeh+l5WMLAX229gTZ0pI7ROQmKdk2f/Sw3V1iJgC6wxPrSqd3764qc6OdKvnJpCtKy7sBEKmA3Ca3FQA81HkT49hCIPLqcj/gVoSAhzq/tQBM/5aAv7v1gARU0DSkNABPy+ImnP/D39MekPIekPKPzaX8g5OSt1L60VkBkPIPT+vqlYqPz/8NJmS6Tvm3i3kAAAAASUVORK5CYII=" rel="icon" type="image/x-icon">
+<link href="http://stevenchen886.blogspot.com/2018/08/hough-transform.html" rel="canonical">
+<link rel="alternate" type="application/atom+xml" title="消失的密室 - Atom" href="http://stevenchen886.blogspot.com/feeds/posts/default">
+<link rel="alternate" type="application/rss+xml" title="消失的密室 - RSS" href="http://stevenchen886.blogspot.com/feeds/posts/default?alt=rss">
+<link rel="service.post" type="application/atom+xml" title="消失的密室 - Atom" href="https://www.blogger.com/feeds/8728799276215447945/posts/default">
+
+<link rel="alternate" type="application/atom+xml" title="消失的密室 - Atom" href="http://stevenchen886.blogspot.com/feeds/5260603964117315453/comments/default">
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/864213505-ieretrofit.js"></script>
+<![endif]-->
+<link href="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/edge_type.png" rel="image_src">
+<meta content="http://stevenchen886.blogspot.com/2018/08/hough-transform.html" property="og:url">
+<meta content="邊緣檢測：Canny edge detection algorithm" property="og:title">
+<meta content=" 邊緣檢測 的目的是標識數位圖像中亮度變化明顯的點。 圖像屬性中的顯著變化通常反映了屬性的重要事件和變化。這些包括   （i）深度上的不連續、   （ii）表面方向不連續、   （iii）物質屬性變化 和   （iv）場景照明變化。    邊緣檢測是圖像處理和電腦視覺中，尤其是特..." property="og:description">
+<meta content="https://2.bp.blogspot.com/-ZC7fGTx-ajM/W62cAoZIHWI/AAAAAAAAEIU/HL4Yr-4M30U6B3KEDjmHXAyXUWOq9kdHwCLcBGAs/w1200-h630-p-k-no-nu/edge_type.png" property="og:image">
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>消失的密室: 邊緣檢測：Canny edge detection algorithm</title>
+<style id="page-skin-1" type="text/css"><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Ethereal
+Designer: Jason Morrow
+URL:      jasonmorrow.etsy.com
+----------------------------------------------- */
+
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #666666;
+background: #3d85c6 none repeat-x scroll top left;
+}
+html body .content-outer {
+min-width: 0;
+max-width: 100%;
+width: 100%;
+}
+a:link {
+text-decoration: none;
+color: #3d74a5;
+}
+a:visited {
+text-decoration: none;
+color: #4d469c;
+}
+a:hover {
+text-decoration: underline;
+color: #3d74a5;
+}
+.main-inner {
+padding-top: 15px;
+}
+.body-fauxcolumn-outer {
+background: transparent url(//themes.googleusercontent.com/image?id=0BwVBOzw_-hbMMDZjM2Q4YjctMTY2OC00ZGU2LWJjZDYtODVjOGRiOThlMGQ3) repeat-x scroll top center;
+}
+.content-fauxcolumns .fauxcolumn-inner {
+background: #d4e1ff url(https://resources.blogblog.com/blogblog/data/1kt/ethereal/white-fade.png) repeat-x scroll top left;
+border-left: 1px solid #bbbbff;
+border-right: 1px solid #bbbbff;
+}
+/* Flexible Background
+----------------------------------------------- */
+.content-fauxcolumn-outer .fauxborder-left {
+width: 100%;
+padding-left: 0;
+margin-left: -0;
+background-color: transparent;
+background-image: none;
+background-repeat: no-repeat;
+background-position: left top;
+}
+.content-fauxcolumn-outer .fauxborder-right {
+margin-right: -0;
+width: 0;
+background-color: transparent;
+background-image: none;
+background-repeat: no-repeat;
+background-position: right top;
+}
+/* Columns
+----------------------------------------------- */
+.content-inner {
+padding: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-inner {
+padding: 27px 0 3px;
+}
+.header-inner .section {
+margin: 0 35px;
+}
+.Header h1 {
+font: normal normal 60px Times, 'Times New Roman', FreeSerif, serif;
+color: #3d74a5;
+}
+.Header h1 a {
+color: #3d74a5;
+}
+.Header .description {
+font-size: 115%;
+color: #666666;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 0;
+padding-right: 0;
+margin-bottom: 0;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-outer {
+position: relative;
+background: transparent;
+}
+.tabs-cap-top, .tabs-cap-bottom {
+position: absolute;
+width: 100%;
+}
+.tabs-cap-bottom {
+bottom: 0;
+}
+.tabs-inner {
+padding: 0;
+}
+.tabs-inner .section {
+margin: 0 35px;
+}
+*+html body .tabs-inner .widget li {
+padding: 1px;
+}
+.PageList {
+border-bottom: 1px solid #c2d8fa;
+}
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+position: relative;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+background: #4eabff none ;
+color: #ffffff;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+margin: 0;
+margin-right: 1px;
+padding: .65em 1.5em;
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #666666;
+background-color: #c2d8fa;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: normal bold 12px Verdana, Geneva, sans-serif;
+color: #666666;
+}
+/* Widgets
+----------------------------------------------- */
+.main-inner .column-left-inner {
+padding: 0 0 0 20px;
+}
+.main-inner .column-left-inner .section {
+margin-right: 0;
+}
+.main-inner .column-right-inner {
+padding: 0 20px 0 0;
+}
+.main-inner .column-right-inner .section {
+margin-left: 0;
+}
+.main-inner .section {
+padding: 0;
+}
+.main-inner .widget {
+padding: 0 0 15px;
+margin: 20px 0;
+border-bottom: 1px solid #dbdbdb;
+}
+.main-inner .widget h2 {
+margin: 0;
+padding: .6em 0 .5em;
+}
+.footer-inner .widget h2 {
+padding: 0 0 .4em;
+}
+.main-inner .widget h2 + div, .footer-inner .widget h2 + div {
+padding-top: 15px;
+}
+.main-inner .widget .widget-content {
+margin: 0;
+padding: 15px 0 0;
+}
+.main-inner .widget ul, .main-inner .widget #ArchiveList ul.flat {
+margin: -15px -15px -15px;
+padding: 0;
+list-style: none;
+}
+.main-inner .sidebar .widget h2 {
+border-bottom: 1px solid #dbdbdb;
+}
+.main-inner .widget #ArchiveList {
+margin: -15px 0 0;
+}
+.main-inner .widget ul li, .main-inner .widget #ArchiveList ul.flat li {
+padding: .5em 15px;
+text-indent: 0;
+}
+.main-inner .widget #ArchiveList ul li {
+padding-top: .25em;
+padding-bottom: .25em;
+}
+.main-inner .widget ul li:first-child, .main-inner .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.main-inner .widget ul li:last-child, .main-inner .widget #ArchiveList ul.flat li:last-child {
+border-bottom: none;
+}
+.main-inner .widget .post-body ul {
+padding: 0 2.5em;
+margin: .5em 0;
+list-style: disc;
+}
+.main-inner .widget .post-body ul li {
+padding: 0.25em 0;
+margin-bottom: .25em;
+color: #666666;
+border: none;
+}
+.footer-inner .widget ul {
+padding: 0;
+list-style: none;
+}
+.widget .zippy {
+color: #666666;
+}
+/* Posts
+----------------------------------------------- */
+.main.section {
+margin: 0 20px;
+}
+body .main-inner .Blog {
+padding: 0;
+background-color: transparent;
+border: none;
+}
+.main-inner .widget h2.date-header {
+border-bottom: 1px solid #dbdbdb;
+}
+.date-outer {
+position: relative;
+margin: 15px 0 20px;
+}
+.date-outer:first-child {
+margin-top: 0;
+}
+.date-posts {
+clear: both;
+}
+.post-outer, .inline-ad {
+border-bottom: 1px solid #dbdbdb;
+padding: 30px 0;
+}
+.post-outer {
+padding-bottom: 10px;
+}
+.post-outer:first-child {
+padding-top: 0;
+border-top: none;
+}
+.post-outer:last-child, .inline-ad:last-child {
+border-bottom: none;
+}
+.post-body img {
+padding: 8px;
+}
+h3.post-title, h4 {
+font: normal normal 24px Times, Times New Roman, serif;
+color: #3d85c6;
+}
+h3.post-title a {
+font: normal normal 24px Times, Times New Roman, serif;
+color: #3d85c6;
+text-decoration: none;
+}
+h3.post-title a:hover {
+color: #3d74a5;
+text-decoration: underline;
+}
+.post-header {
+margin: 0 0 1.5em;
+}
+.post-body {
+line-height: 1.4;
+}
+.post-footer {
+margin: 1.5em 0 0;
+}
+#blog-pager {
+padding: 15px;
+}
+.blog-feeds, .post-feeds {
+margin: 1em 0;
+text-align: center;
+}
+.post-outer .comments {
+margin-top: 2em;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+background: #d4e1ff url(https://resources.blogblog.com/blogblog/data/1kt/ethereal/white-fade.png) repeat-x scroll top left;
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #dbdbdb;
+border-bottom: 1px solid #dbdbdb;
+}
+.comments .comment-thread.inline-thread {
+background: #d4e1ff url(https://resources.blogblog.com/blogblog/data/1kt/ethereal/white-fade.png) repeat-x scroll top left;
+}
+.comments .continue {
+border-top: 2px solid #dbdbdb;
+}
+/* Footer
+----------------------------------------------- */
+.footer-inner {
+padding: 30px 0;
+overflow: hidden;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+background-size: auto
+}
+.mobile .body-fauxcolumn-outer {
+background: ;
+}
+.mobile .content-fauxcolumns .fauxcolumn-inner {
+opacity: 0.75;
+}
+.mobile .content-fauxcolumn-outer .fauxborder-right {
+margin-right: 0;
+}
+.mobile-link-button {
+background-color: #4eabff;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile-index-contents {
+color: #444444;
+}
+.mobile .body-fauxcolumn-outer {
+background-size: 100% auto;
+}
+.mobile .mobile-date-outer {
+border-bottom: transparent;
+}
+.mobile .PageList {
+border-bottom: none;
+}
+.mobile .tabs-inner .section {
+margin: 0;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: #4eabff none;
+color: #ffffff;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #ffffff;
+}
+.mobile .footer-inner {
+overflow: visible;
+}
+body.mobile .AdSense {
+margin: 0 -10px;
+}
+
+--></style>
+<style id="template-skin-1" type="text/css"><!--
+body {
+min-width: 860px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 860px;
+max-width: 860px;
+_width: 860px;
+}
+.main-inner .columns {
+padding-left: 260px;
+padding-right: 0px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 260px;
+right: 0px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("260px") -
+parseInt("0px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 260px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 0px;
+}
+.main-inner .column-left-outer {
+width: 260px;
+right: 100%;
+margin-left: -260px;
+}
+.main-inner .column-right-outer {
+width: 0px;
+margin-right: -0px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<link href="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/authorization.css" media="all" onload="if(media!=&#39;all&#39;)media=&#39;all&#39;" rel="stylesheet"><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=8728799276215447945&amp;zx=1b70a5e4-3d06-4cca-ab74-0c240233f540' rel='stylesheet'/></noscript>
+
+<script src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/cb=gapi.loaded_4" async=""></script><script src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/cb=gapi.loaded_3" async=""></script><script src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/cb=gapi.loaded_2" async=""></script><script type="text/javascript" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/f.txt"></script><style>.gc-bubbleDefault{background-color:transparent !important;text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5 !important}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailtop,.tbl-grey .pls-tailright,.tbl-grey .pls-tailleft,.tbl-grey .pls-dropTR,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png) !important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0} </style><script async="" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/lazy.min.js.下載"></script></head>
+<body class=" variant-blossoms1Blue">
+<div class="navbar section" id="navbar" name="導覽列"><div class="widget Navbar" data-version="1" id="Navbar1"><script src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/cb=gapi(2).loaded_1" async=""></script><script src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/cb=gapi(3).loaded_0" async=""></script><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="100%" id="navbar-iframe" name="navbar-iframe" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/navbar.html"></iframe></div>
+<script type="text/javascript" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/plusone.js.下載" gapi_processed="true"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d8728799276215447945\x26blogName\x3d%E6%B6%88%E5%A4%B1%E7%9A%84%E5%AF%86%E5%AE%A4\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dLIGHT\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttps://stevenchen886.blogspot.com/search\x26blogLocale\x3dzh_TW\x26v\x3d2\x26homepageUrl\x3dhttp://stevenchen886.blogspot.com/\x26targetPostID\x3d5260603964117315453\x26blogPostOrPageUrl\x3dhttp://stevenchen886.blogspot.com/2018/08/hough-transform.html\x26vt\x3d7383853621222803322',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class="body-fauxcolumns">
+<div class="fauxcolumn-outer body-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content">
+<div class="content-fauxcolumns">
+<div class="fauxcolumn-outer content-fauxcolumn-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<div class="content-outer">
+<div class="content-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left content-fauxborder-left">
+<div class="fauxborder-right content-fauxborder-right"></div>
+<div class="content-inner">
+<header>
+<div class="header-outer">
+<div class="header-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left header-fauxborder-left">
+<div class="fauxborder-right header-fauxborder-right"></div>
+<div class="region-inner header-inner">
+<div class="header section" id="header" name="標頭"><div class="widget Header" data-version="1" id="Header1">
+<div id="header-inner">
+<div class="titlewrapper">
+<h1 class="title">
+<a href="http://stevenchen886.blogspot.com/">
+消失的密室
+</a>
+</h1>
+</div>
+<div class="descriptionwrapper">
+<p class="description"><span>有著一顆年輕的心的「老頭」。有著許多想法，一直努力地強化自己，有朝一日一定能建構起自己的舞台。
+這個部落格一點一滴地記錄我在工作上與生活上所讀過的東西與心得，是我的一本網路筆記。</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="header-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</header>
+<div class="tabs-outer">
+<div class="tabs-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left tabs-fauxborder-left">
+<div class="fauxborder-right tabs-fauxborder-right"></div>
+<div class="region-inner tabs-inner">
+<div class="tabs section" id="crosscol" name="跨欄區"><div class="widget BlogSearch" data-version="1" id="BlogSearch2">
+<h2 class="title">搜尋此網誌</h2>
+<div class="widget-content">
+<div id="BlogSearch2_form">
+<form action="http://stevenchen886.blogspot.com/search" class="gsc-search-box" target="_top">
+<table cellpadding="0" cellspacing="0" class="gsc-search-box">
+<tbody>
+<tr>
+<td class="gsc-input">
+<input autocomplete="off" class="gsc-input" name="q" size="10" title="search" type="text" value="">
+</td>
+<td class="gsc-search-button">
+<input class="gsc-search-button" title="search" type="submit" value="搜尋">
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8728799276215447945&amp;widgetType=BlogSearch&amp;widgetId=BlogSearch2&amp;action=editWidget&amp;sectionId=crosscol" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogSearch2&quot;));" target="configBlogSearch2" title="編輯">
+<img alt="" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+<div class="tabs no-items section" id="crosscol-overflow" name="Cross-Column 2"></div>
+</div>
+</div>
+<div class="tabs-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="main-outer">
+<div class="main-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left main-fauxborder-left">
+<div class="fauxborder-right main-fauxborder-right"></div>
+<div class="region-inner main-inner">
+<div class="columns fauxcolumns">
+<div class="fauxcolumn-outer fauxcolumn-center-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-left-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<div class="fauxcolumn-outer fauxcolumn-right-outer">
+<div class="cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left">
+<div class="fauxborder-right"></div>
+<div class="fauxcolumn-inner">
+</div>
+</div>
+<div class="cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class="columns-inner">
+<div class="column-center-outer">
+<div class="column-center-inner">
+<div class="main section" id="main" name="主版面"><div class="widget Blog" data-version="1" id="Blog1">
+<div class="blog-posts hfeed">
+
+          <div class="date-outer">
+        
+<h2 class="date-header"><span>2018年8月30日 星期四</span></h2>
+
+          <div class="date-posts">
+        
+<div class="post-outer">
+<div class="post hentry uncustomized-post-template" itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+<meta content="https://2.bp.blogspot.com/-ZC7fGTx-ajM/W62cAoZIHWI/AAAAAAAAEIU/HL4Yr-4M30U6B3KEDjmHXAyXUWOq9kdHwCLcBGAs/s400/edge_type.png" itemprop="image_url">
+<meta content="8728799276215447945" itemprop="blogId">
+<meta content="5260603964117315453" itemprop="postId">
+<a name="5260603964117315453"></a>
+<h3 class="post-title entry-title" itemprop="name">
+邊緣檢測：Canny edge detection algorithm
+</h3>
+<div class="post-header">
+<div class="post-header-line-1"></div>
+</div>
+<div class="post-body entry-content" id="post-body-5260603964117315453" itemprop="description articleBody">
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>邊緣檢測</b>的目的是標識數位圖像中亮度變化明顯的點。<br>圖像屬性中的顯著變化通常反映了屬性的重要事件和變化。這些包括</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">（i）深度上的不連續、</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">（ii）表面方向不連續、</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">（iii）物質屬性變化 和</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">（iv）場景照明變化。&nbsp;</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">邊緣檢測是圖像處理和電腦視覺中，尤其是特徵檢測中的一個研究領域。也</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">常用作於Hough變換的預處理。</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>Edge types?</span><br>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">1. Step edge&nbsp; ___|-----<br>2. Ramp edge&nbsp; ___/-----<br>3. Roof edge&nbsp; ___/^\___</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><a href="https://2.bp.blogspot.com/-ZC7fGTx-ajM/W62cAoZIHWI/AAAAAAAAEIU/HL4Yr-4M30U6B3KEDjmHXAyXUWOq9kdHwCLcBGAs/s1600/edge_type.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="286" data-original-width="929" height="122" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/edge_type.png" width="400"></a></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">灰階影像是三維空間（亮度值是第三維），要找灰階變化最恰當的工具是gradient（梯 度）。所以edge detection基本上是用一階（1st derivative）和二階（2nd derivative）微分。</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">一次微分後形成的波峰(Peak)，正代表著兩個區域的邊緣處。若波峰夠高，也就是已超過門檻值(Threshold)，已足以說明在該處有邊點形成的邊線(Edge Line)。而二次微分引出的通過零點(Zero Crossing)觀念。</span></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">用於邊緣檢測的</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">方法</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">絕大部分可以劃分為兩類：</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">一類是</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">基於尋找，另</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">一類是</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">基於零穿越。</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp;- 基於尋找的方法是通過尋找圖像一階導數中的最大和最小值來檢測邊界，通常是將邊界定位在梯度最大的方向。</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp;-&nbsp;</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">基於零穿越的方法是通過尋找圖像二階導數零穿越來尋找邊界，通常是用Laplacian算子或非線性微分方程式的零交叉點。</span><br>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">梯度 ---<br>1）梯度是一個向量，即有方向有大小；<br>2）梯度的方向是最大方嚮導數的方向；<br>3）梯度的值是最大方嚮導數的值。<br>梯度即函數在某一點最大的方向導數，函數沿梯度方向函數有最大的變化率。</span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span>
+<br>
+<div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>Canny算子 - [<a href="https://zh.wikipedia.org/wiki/Canny%E7%AE%97%E5%AD%90">Wiki</a>]</b></span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">Canny邊緣檢測算子是澳洲計算機科學家約翰·坎尼（John F. Canny）於1986年開發出來的一個多級邊緣檢測算法。更為重要的是Canny創立了「邊緣檢測計算理論」（computational theory of edge detection）解釋這項技術如何工作。<br><br>Canny的目標是找到一個最優的邊緣檢測算法，最優邊緣檢測的含義是：<br>好的檢測 - 算法能夠儘可能多地標識出圖像中的實際邊緣。<br>好的定位 - 標識出的邊緣要與實際圖像中的實際邊緣儘可能接近。<br>最小響應 - 圖像中的邊緣只能標識一次，並且對可能存在的圖像雜訊不應標識為邊緣。<br><br>為了滿足這些要求Canny使用了變分法，這是一種尋找滿足特定功能的函數的方法。最優檢測使用四個指數函數項的和表示，但是它非常近似於高斯函數的一階導數。</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span><br>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">Canny算法的第一步是將輸入影像灰階化，</span><br>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; Gray = R*0.299 + G*0.587 + B*0.114，</span><br>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span> <span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">再將影像去除雜訊，也就是</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">對原始數據與高斯平滑模板作卷積，或對其做中值濾波(Median Filter)，得到的圖像與原始圖像相比會有些輕微的模糊（blurred）。</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">單獨的一個像素噪聲在經過高斯平滑或</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">中值濾波</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">的圖像上變得幾乎沒有影響。較高的亮度梯度比較有可能是邊緣，但是沒有一個確切的值來限定多大的亮度梯度是邊緣多大又不是，所以Canny使用了滯後(Hysteresis)閾值。滯後閾值需要兩個閾值—高閾值與低閾值。</span><br>
+<div>
+<div>
+<span class="mw-editsection" style="font-family: sans-serif; font-size: x-small; line-height: 1em; margin-left: 1em; vertical-align: baseline; white-space: nowrap;"><span class="mw-editsection-bracket"><br></span></span></div>
+<br></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">對平滑後的圖像使用Sobel運算元計算水平方向和垂直方向的一階導數(Gx 和 Gy），根據得到的這兩幅梯度圖（Gx 和 Gy）找到邊界的梯度和方向，公式如下：</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>int[] Gx ={ -1, 0, 1,</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -2, 0, 2,</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1, 0, 1};&nbsp;</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">int[] Gy ={ -1,-2,-1,</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0, 0, 0,</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1, 2, 1};</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">--- Gradient(G) = SQRT(Gx*Gx + Gy*Gy);</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">--- Angle(theta) = arctan(Gy/Gx);</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>然後，將每個畫素點的梯度的值和方向分別放入兩個陣列中。</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">梯度的方向一般總是與邊界垂直。梯度方向被歸為四類：垂直，水平，和 兩個對角線。</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>如果直接把梯度作為邊緣的話，將得到一個粗邊緣的影象，這不滿足上面提到的準則，我們希望得到定位準確的單畫素的邊緣，所以將每個畫素點的梯度與其梯度方向上的相鄰畫素比較，如果不是極大值，將其置0，否則置為某一不大於255的數，也就是進行"非極大值抑制</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">（Non-Maximum Suppression）分析"。</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">在John Canny提出的Canny算子的論文中，非最大值抑制就只是在0、90、45、135四個梯度方向上進行的，每個像素點梯度方向按照相近程度用這四個方向來代替。這種情況下，非最大值抑制所比較的相鄰兩個像素就是：</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"> 1）&nbsp; 0：左邊和右邊<br>2） 45：右上和左下<br>3） 90：上邊和下邊<br>4）135：左上和右下<br>因為，自然圖像中的邊緣梯度方向不一定是沿著這四個方向的。因此，就有很大的必要進行插值，找出在一個像素點上最能吻合其所在梯度方向的兩側的像素值。</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">其實不需要計算arctan，只需要依G值及比較Gx &amp; Gy。</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">例如，</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">若&nbsp;</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">G == 0，表示此點非edge；</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">若 G != 0，</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp;- 若abs(Gy) &gt; abs(Gx) &amp; Gx*Gy&gt;0知其梯度方向為：</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>g1 g2</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>&nbsp; &nbsp; P&nbsp;</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>&nbsp; &nbsp;g4 g3</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">W=abs(Gx/Gy)</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>dTemp1 = W*g1 + (1-W)*g2;<br>dTemp2 = W*g3 + (1-W)*g4;</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp;- 若abs(Gy) &gt; abs(Gx) &amp; Gx*Gy&lt;0知其梯度方向為：</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>&nbsp; &nbsp;g2 g1</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>&nbsp; &nbsp; P&nbsp;</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>g3 g4</b></span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">W=abs(Gx/Gy)</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>dTemp1 = W*g1 + (1-W)*g2;</span><br>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">dTemp2 = W*g3 + (1-W)*g4;</span></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp;- 若abs(Gx) &gt; abs(Gy) &amp; Gx*Gy&gt;0知其梯度方向為：</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>g1</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>g2&nbsp; P g4</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>&nbsp; &nbsp; &nbsp; g3</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">W=abs(Gy/Gx)</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>dTemp1 = W*g1 + (1-W)*g2;<br>dTemp2 = W*g3 + (1-W)*g4;</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp;- 若abs(Gy) &gt; abs(Gx) &amp; Gx*Gy&lt;0知其梯度方向為：</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>&nbsp; &nbsp; &nbsp; g3</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>g2&nbsp; P g4</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><b>g1</b></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">W=abs(Gy/Gx)</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>dTemp1 = W*g1 + (1-W)*g2;<br>dTemp2 = W*g3 + (1-W)*g4;</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">==&gt; 如果P大於dTemp1與dTemp2則為一疑似edge點，否則就不是。</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">由</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">上一步得到的邊緣還有很多偽邊緣，我們通過設定高低雙閾值的方法去除它們，具體思想是：梯度值大於高閾值的畫素點認為其一定是邊緣，置為255，梯度值小於低閾值的畫素點認為其一定不是邊緣置為0，介於兩閾值之間的點畫素點為待定邊緣。然後，考察這些待定邊緣點，如果其畫素點周圍8鄰域的梯度值都小於高閾值，認為其不是邊緣點，置為0；至於，如何設定雙閾值大小，我們可以根據實際情況設定，如設成100和20，也可以根據影像梯度值的統計資訊設定，一般小閾值是大閾值的0.4倍即可。</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">總括</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">來說，Canny算子邊緣檢測的具體步驟如下：<br>一、用高斯濾波器或中值</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">濾波器</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">平滑圖像</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">二、用Sobel等梯度算子計算梯度幅值和方向<br>三、對梯度幅值進行非極大值抑制<br>四、用雙閾值算法檢測和連接邊緣</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">Reference:</span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">1.&nbsp;<a href="https://blog.csdn.net/dcrmg/article/details/52344902">Canny边缘检测及C++实现</a></span></div>
+<div class="separator" style="clear: both;">
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">2.&nbsp;</span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><a href="https://blog.csdn.net/kezunhai/article/details/11620357">Canny算子中的非極大值抑制（Non-Maximum Suppression）分析</a></span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>3. <a href="https://blog.csdn.net/walilk/article/details/50978864">梯度（Gradient）与梯度下降法（Gradient Descent）</a></span><span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>4. <a href="https://www.cnblogs.com/zjutzz/p/7843651.html">OpenCV trackbar 避免使用全局变量</a></span><span style="font-family: Courier New, Courier, monospace;"><br>5. <a href="https://www.itread01.com/articles/1476625549.html">OpenCV Canny 源碼註釋與分析</a></span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>C code:<br><a href="https://github.com/steven-lcchen/canny_edge_detection">https://github.com/steven-lcchen/canny_edge_detection</a></span></div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;"><br>Reference：<br>1.&nbsp;<a href="https://www.cnblogs.com/zjutzz/p/7843651.html">OpenCV trackbar 避免使用全局变量</a></span><br>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp;我在此範例遇到的問題是trackbar的圖片視窗及trackbar名稱不能是中文的。</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp;即<br>&nbsp; &nbsp; string winname = <span style="color: red;"><b>"阈值分割"</b></span>;&nbsp;</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; namedWindow(winname);&nbsp;</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; int value = 30;&nbsp;</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; FkOpenCV fk(winname, im_gray);&nbsp;</span></div>
+<div>
+<span style="font-family: &quot;courier new&quot; , &quot;courier&quot; , monospace;">&nbsp; &nbsp; createTrackbar(<span style="color: red;"><b>"模式"</b></span>, winname, &amp;value, 255, on_threshold, &amp;fk);</span></div>
+<div>
+<b style="color: red; font-family: &quot;Courier New&quot;, Courier, monospace;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 紅字部分要改成英文。。。否則執行時會造成core dump.</b></div>
+<div style="clear: both;"></div>
+</div>
+<div class="post-footer">
+<div class="post-footer-line post-footer-line-1">
+<span class="post-author vcard">
+張貼者：
+<span class="fn" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Person">
+<meta content="https://www.blogger.com/profile/01226841196842345975" itemprop="url">
+<a class="g-profile" href="https://www.blogger.com/profile/01226841196842345975" rel="author" title="author profile" data-gapiscan="true" data-onload="true" data-gapiattached="true">
+<span itemprop="name">Steven</span>
+</a>
+</span>
+</span>
+<span class="post-timestamp">
+於
+<meta content="http://stevenchen886.blogspot.com/2018/08/hough-transform.html" itemprop="url">
+<a class="timestamp-link" href="http://stevenchen886.blogspot.com/2018/08/hough-transform.html" rel="bookmark" title="permanent link"><abbr class="published" itemprop="datePublished" title="2018-08-30T20:42:00+08:00">下午8:42</abbr></a>
+</span>
+<span class="reaction-buttons">
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-control blog-admin pid-814320470">
+<a href="https://www.blogger.com/post-edit.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;from=pencil" title="編輯文章">
+<img alt="" class="icon-action" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_edit_allbkg.gif" width="18">
+</a>
+</span>
+</span>
+<div class="post-share-buttons goog-inline-block">
+<a class="goog-inline-block share-button sb-email" href="https://www.blogger.com/share-post.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;target=email" target="_blank" title="以電子郵件傳送這篇文章"><span class="share-button-link-text">以電子郵件傳送這篇文章</span></a><a class="goog-inline-block share-button sb-blog" href="https://www.blogger.com/share-post.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;target=blog" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=270,width=475&quot;); return false;" target="_blank" title="BlogThis！"><span class="share-button-link-text">BlogThis！</span></a><a class="goog-inline-block share-button sb-twitter" href="https://www.blogger.com/share-post.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;target=twitter" target="_blank" title="分享至 Twitter"><span class="share-button-link-text">分享至 Twitter</span></a><a class="goog-inline-block share-button sb-facebook" href="https://www.blogger.com/share-post.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;target=facebook" onclick="window.open(this.href, &quot;_blank&quot;, &quot;height=430,width=640&quot;); return false;" target="_blank" title="分享至 Facebook"><span class="share-button-link-text">分享至 Facebook</span></a><a class="goog-inline-block share-button sb-pinterest" href="https://www.blogger.com/share-post.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;target=pinterest" target="_blank" title="分享到 Pinterest"><span class="share-button-link-text">分享到 Pinterest</span></a><div class="goog-inline-block google-plus-share-container"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1542852459050" name="I0_1542852459050" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/fastbutton(1).html" data-gapiattached="true" title="G+"></iframe></div></div>
+</div>
+</div>
+<div class="post-footer-line post-footer-line-2">
+<span class="post-labels">
+標籤：
+<a href="http://stevenchen886.blogspot.com/search/label/%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86" rel="tag">影像處理</a>
+</span>
+</div>
+<div class="post-footer-line post-footer-line-3">
+<span class="post-location">
+</span>
+</div>
+</div>
+</div>
+<div class="comments" id="comments">
+<a name="comments"></a>
+<h4>沒有留言:</h4>
+<div id="Blog1_comments-block-wrapper">
+<dl class="avatar-comment-indent" id="comments-block">
+</dl>
+</div>
+<p class="comment-footer">
+</p><div class="comment-form">
+<a name="comment-form"></a>
+<h4 id="comment-post-message">張貼留言</h4>
+<p>
+</p>
+<a href="https://www.blogger.com/comment-iframe.g?blogID=8728799276215447945&amp;postID=5260603964117315453&amp;blogspotRpcToken=8783977" id="comment-editor-src"></a>
+<iframe allowtransparency="true" class="blogger-iframe-colorize blogger-comment-from-post" frameborder="0" height="194px" id="comment-editor" name="comment-editor" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/comment-iframe.html" width="100%" data-resized="true"></iframe>
+<script src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/2567313873-comment_from_post_iframe.js.下載" type="text/javascript"></script>
+<script type="text/javascript">
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+<p></p>
+<div id="backlinks-container">
+<div id="Blog1_backlinks-container">
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link" href="http://stevenchen886.blogspot.com/2018/09/opencv-example-of-commandlineparser.html" id="Blog1_blog-pager-newer-link" title="較新的文章">較新的文章</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link" href="http://stevenchen886.blogspot.com/2018/08/blog-post.html" id="Blog1_blog-pager-older-link" title="較舊的文章">較舊的文章</a>
+</span>
+<a class="home-link" href="http://stevenchen886.blogspot.com/">首頁</a>
+</div>
+<div class="clear"></div>
+<div class="post-feeds">
+<div class="feed-links">
+訂閱：
+<a class="feed-link" href="http://stevenchen886.blogspot.com/feeds/5260603964117315453/comments/default" target="_blank" type="application/atom+xml">張貼留言 (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">
+    window.___gcfg = { 'lang': 'zh-TW' };
+  </script>
+</div></div>
+</div>
+</div>
+<div class="column-left-outer">
+<div class="column-left-inner">
+<aside>
+<div class="sidebar section" id="sidebar-left-1"><div class="widget Wikipedia" data-version="1" id="Wikipedia1">
+<h2 class="title">Wikipedia</h2>
+<div class="wikipedia-search-main-container">
+<form class="wikipedia-search-form" id="Wikipedia1_wikipedia-search-form" name="wikipedia">
+<div class="wikipedia-searchtable">
+<span>
+<a class="wikipedia-search-wiki-link" href="https://wikipedia.org/wiki/" target="_blank">
+<img align="top" class="wikipedia-icon" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon_wikipedia_w.png">
+</a>
+</span>
+<span class="wikipedia-search-bar">
+<span class="wikipedia-input-box">
+<input class="wikipedia-search-input" id="Wikipedia1_wikipedia-search-input" type="text">
+</span>
+<span>
+<input class="wikipedia-search-button" type="submit">
+</span>
+</span>
+</div>
+</form>
+<div class="wikipedia-search-results-header" id="Wikipedia1_wikipedia-search-results-header">搜尋結果</div>
+<div class="wikipedia-search-results" id="Wikipedia1_wikipedia-search-results"></div>
+<nobr>
+<div dir="ltr" id="Wikipedia1_wikipedia-search-more"></div>
+</nobr>
+</div><br>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8728799276215447945&amp;widgetType=Wikipedia&amp;widgetId=Wikipedia1&amp;action=editWidget&amp;sectionId=sidebar-left-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Wikipedia1&quot;));" target="configWikipedia1" title="編輯">
+<img alt="" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div><div class="widget BlogArchive" data-version="1" id="BlogArchive1">
+<h2>網誌存檔</h2>
+<div class="widget-content">
+<div id="ArchiveList">
+<div id="BlogArchive1_ArchiveList">
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">
+
+        ▼&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/">
+2018
+</a>
+<span class="post-count" dir="ltr">(31)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/09/">
+九月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate expanded">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy toggle-open">
+
+        ▼&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/08/">
+八月
+</a>
+<span class="post-count" dir="ltr">(10)</span>
+<ul class="posts">
+<li><a href="http://stevenchen886.blogspot.com/2018/08/hough-transform.html">邊緣檢測：Canny edge detection algorithm</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/blog-post.html">Filter / Kernel：拉普拉斯算子與銳化處理</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/connected-component-labeling-edge.html">Connected Component Labeling (標記連結物件) -- 找邊界(edge)...</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/bash.html">處理BASH的命令列</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/vim.html">Vim的指令整理</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/function-templateexplicit.html">函數樣板(function template)的顯示實體化(explicit instantiati...</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/opencvcvexportsw-cvexport-gnu-c.html">轉載收藏：OpenCV中的CV_EXPORTS_W &amp; CV_EXPORT 及 GNU C __at...</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/struct.html">定義及宣告struct(結構)的幾種方式</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/c.html">C++的變數宣告及初始化</a></li>
+<li><a href="http://stevenchen886.blogspot.com/2018/08/opencv-341line-function.html">OpenCV-3.4.1中line function的相關原始碼</a></li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/06/">
+六月
+</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2018/02/">
+二月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/">
+2017
+</a>
+<span class="post-count" dir="ltr">(55)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/09/">
+九月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/06/">
+六月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/05/">
+五月
+</a>
+<span class="post-count" dir="ltr">(11)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/04/">
+四月
+</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/03/">
+三月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/02/">
+二月
+</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2017/01/">
+一月
+</a>
+<span class="post-count" dir="ltr">(12)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/">
+2016
+</a>
+<span class="post-count" dir="ltr">(30)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/12/">
+十二月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/09/">
+九月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/08/">
+八月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/06/">
+六月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/05/">
+五月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/03/">
+三月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2016/01/">
+一月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/">
+2015
+</a>
+<span class="post-count" dir="ltr">(35)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/12/">
+十二月
+</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/09/">
+九月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/08/">
+八月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/06/">
+六月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2015/05/">
+五月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/">
+2014
+</a>
+<span class="post-count" dir="ltr">(28)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(9)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/06/">
+六月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/04/">
+四月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/03/">
+三月
+</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/02/">
+二月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2014/01/">
+一月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/">
+2013
+</a>
+<span class="post-count" dir="ltr">(82)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/12/">
+十二月
+</a>
+<span class="post-count" dir="ltr">(8)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/09/">
+九月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/08/">
+八月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(7)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/06/">
+六月
+</a>
+<span class="post-count" dir="ltr">(39)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/05/">
+五月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/04/">
+四月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/03/">
+三月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/02/">
+二月
+</a>
+<span class="post-count" dir="ltr">(4)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2013/01/">
+一月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/">
+2012
+</a>
+<span class="post-count" dir="ltr">(24)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/12/">
+十二月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/09/">
+九月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/08/">
+八月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/05/">
+五月
+</a>
+<span class="post-count" dir="ltr">(3)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/04/">
+四月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/03/">
+三月
+</a>
+<span class="post-count" dir="ltr">(6)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2012/02/">
+二月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2011/">
+2011
+</a>
+<span class="post-count" dir="ltr">(6)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2011/12/">
+十二月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2011/11/">
+十一月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2009/">
+2009
+</a>
+<span class="post-count" dir="ltr">(8)</span>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2009/10/">
+十月
+</a>
+<span class="post-count" dir="ltr">(1)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2009/08/">
+八月
+</a>
+<span class="post-count" dir="ltr">(2)</span>
+</li>
+</ul>
+<ul class="hierarchy">
+<li class="archivedate collapsed">
+<a class="toggle" href="javascript:void(0)">
+<span class="zippy">
+
+        ►&nbsp;
+      
+</span>
+</a>
+<a class="post-count-link" href="http://stevenchen886.blogspot.com/2009/07/">
+七月
+</a>
+<span class="post-count" dir="ltr">(5)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8728799276215447945&amp;widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=editWidget&amp;sectionId=sidebar-left-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;BlogArchive1&quot;));" target="configBlogArchive1" title="編輯">
+<img alt="" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div><div class="widget Label" data-version="1" id="Label2">
+<h2>標籤</h2>
+<div class="widget-content list-label-widget-content">
+<ul>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/3D%E5%88%97%E5%8D%B0">3D列印</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7">人工智慧</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E4%BB%8B%E9%9D%A2%E6%8A%80%E8%A1%93">介面技術</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%B8">古典文學</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E6%9C%AA%E5%88%86%E9%A1%9E">未分類</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%85%89%E5%AD%B8">光學</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%AD%97%E5%9E%8B%E6%8A%80%E8%A1%93">字型技術</a>
+<span dir="ltr">(7)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%9F%B3%E9%A0%BB%E8%A8%8A%E8%99%9F">音頻訊號</a>
+<span dir="ltr">(11)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%A8%98%E6%86%B6%E9%AB%94">記憶體</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%9F%BA%E6%9C%AC%E9%9B%BB%E5%AD%B8">基本電學</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%B8%B8%E8%AD%98%E7%9F%A5%E8%AD%98">常識知識</a>
+<span dir="ltr">(11)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%A6%96%E9%A0%BB%E8%A8%8A%E8%99%9F">視頻訊號</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%87%8F%E6%B8%AC%E6%8A%80%E8%A1%93">量測技術</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%96%8B%E6%94%BE%E8%A8%AD%E8%A8%88">開放設計</a>
+<span dir="ltr">(11)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6">感測元件</a>
+<span dir="ltr">(4)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%81%8B%E5%8B%95">運動</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%9B%BB%E5%AD%90%E9%9B%BB%E8%B7%AF">電子電路</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E6%85%8B%E5%BA%A6">態度</a>
+<span dir="ltr">(34)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%A3%BD%E7%A8%8B">製程</a>
+<span dir="ltr">(11)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%A0%98%E5%B0%8E%E7%AE%A1%E7%90%86">領導管理</a>
+<span dir="ltr">(14)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86">影像處理</a>
+<span dir="ltr">(12)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%B6%A3%E5%91%B3">趣味</a>
+<span dir="ltr">(2)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%9B%9C%E6%84%9F">雜感</a>
+<span dir="ltr">(20)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/C%2B%2B%20Programming">C++ Programming</a>
+<span dir="ltr">(7)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Conformal">Conformal</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/FPGA">FPGA</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/IC%E8%A8%AD%E8%A8%88">IC設計</a>
+<span dir="ltr">(34)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/IC%E6%A7%8B%E8%A3%9D">IC構裝</a>
+<span dir="ltr">(1)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Linux">Linux</a>
+<span dir="ltr">(28)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/OpenCV">OpenCV</a>
+<span dir="ltr">(7)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/OpenSource">OpenSource</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/P%26R">P&amp;R</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Raspberry_Pi">Raspberry_Pi</a>
+<span dir="ltr">(3)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/RegExp">RegExp</a>
+<span dir="ltr">(5)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Synthesis">Synthesis</a>
+<span dir="ltr">(42)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/TCL">TCL</a>
+<span dir="ltr">(8)</span>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/VIM">VIM</a>
+<span dir="ltr">(3)</span>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8728799276215447945&amp;widgetType=Label&amp;widgetId=Label2&amp;action=editWidget&amp;sectionId=sidebar-left-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Label2&quot;));" target="configLabel2" title="編輯">
+<img alt="" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+</aside>
+</div>
+</div>
+<div class="column-right-outer">
+<div class="column-right-inner">
+<aside>
+</aside>
+</div>
+</div>
+</div>
+<div style="clear: both"></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class="main-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+<footer>
+<div class="footer-outer">
+<div class="footer-cap-top cap-top">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+<div class="fauxborder-left footer-fauxborder-left">
+<div class="fauxborder-right footer-fauxborder-right"></div>
+<div class="region-inner footer-inner">
+<div class="foot section" id="footer-1"><div class="widget Label" data-version="1" id="Label3">
+<h2>標籤</h2>
+<div class="widget-content list-label-widget-content">
+<ul>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/3D%E5%88%97%E5%8D%B0">3D列印</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7">人工智慧</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E4%BB%8B%E9%9D%A2%E6%8A%80%E8%A1%93">介面技術</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%8F%A4%E5%85%B8%E6%96%87%E5%AD%B8">古典文學</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E6%9C%AA%E5%88%86%E9%A1%9E">未分類</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%85%89%E5%AD%B8">光學</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%AD%97%E5%9E%8B%E6%8A%80%E8%A1%93">字型技術</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%9F%B3%E9%A0%BB%E8%A8%8A%E8%99%9F">音頻訊號</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%A8%98%E6%86%B6%E9%AB%94">記憶體</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%9F%BA%E6%9C%AC%E9%9B%BB%E5%AD%B8">基本電學</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%B8%B8%E8%AD%98%E7%9F%A5%E8%AD%98">常識知識</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%A6%96%E9%A0%BB%E8%A8%8A%E8%99%9F">視頻訊號</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%87%8F%E6%B8%AC%E6%8A%80%E8%A1%93">量測技術</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%96%8B%E6%94%BE%E8%A8%AD%E8%A8%88">開放設計</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E6%84%9F%E6%B8%AC%E5%85%83%E4%BB%B6">感測元件</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%81%8B%E5%8B%95">運動</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%9B%BB%E5%AD%90%E9%9B%BB%E8%B7%AF">電子電路</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E6%85%8B%E5%BA%A6">態度</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%A3%BD%E7%A8%8B">製程</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%A0%98%E5%B0%8E%E7%AE%A1%E7%90%86">領導管理</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86">影像處理</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E8%B6%A3%E5%91%B3">趣味</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/%E9%9B%9C%E6%84%9F">雜感</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/C%2B%2B%20Programming">C++ Programming</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Conformal">Conformal</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/FPGA">FPGA</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/IC%E8%A8%AD%E8%A8%88">IC設計</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/IC%E6%A7%8B%E8%A3%9D">IC構裝</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Linux">Linux</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/OpenCV">OpenCV</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/OpenSource">OpenSource</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/P%26R">P&amp;R</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Raspberry_Pi">Raspberry_Pi</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/RegExp">RegExp</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/Synthesis">Synthesis</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/TCL">TCL</a>
+</li>
+<li>
+<a dir="ltr" href="http://stevenchen886.blogspot.com/search/label/VIM">VIM</a>
+</li>
+</ul>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8728799276215447945&amp;widgetType=Label&amp;widgetId=Label3&amp;action=editWidget&amp;sectionId=footer-1" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Label3&quot;));" target="configLabel3" title="編輯">
+<img alt="" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div>
+</div></div>
+<table border="0" cellpadding="0" cellspacing="0" class="section-columns columns-2">
+<tbody>
+<tr>
+<td class="first columns-cell">
+<div class="foot no-items section" id="footer-2-1"></div>
+</td>
+<td class="columns-cell">
+<div class="foot no-items section" id="footer-2-2"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class="foot section" id="footer-3" name="頁尾"><div class="widget Attribution" data-version="1" id="Attribution1">
+<div class="widget-content" style="text-align: center;">
+輕柔雅緻主題. 技術提供：<a href="https://www.blogger.com/" target="_blank">Blogger</a>.
+</div>
+<div class="clear"></div>
+<span class="widget-item-control">
+<span class="item-control blog-admin">
+<a class="quickedit" href="http://www.blogger.com/rearrange?blogID=8728799276215447945&amp;widgetType=Attribution&amp;widgetId=Attribution1&amp;action=editWidget&amp;sectionId=footer-3" onclick="return _WidgetManager._PopupConfig(document.getElementById(&quot;Attribution1&quot;));" target="configAttribution1" title="編輯">
+<img alt="" height="18" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/icon18_wrench_allbkg.png" width="18">
+</a>
+</span>
+</span>
+<div class="clear"></div>
+</div></div>
+</div>
+</div>
+<div class="footer-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class="content-cap-bottom cap-bottom">
+<div class="cap-left"></div>
+<div class="cap-right"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+
+<script type="text/javascript" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/2017279985-widgets.js.下載"></script>
+<script type="text/javascript">
+window['__wavt'] = 'AOuZoY7K6qMAznpF-88Hsp1ZiobCIY9CXg:1542852457887';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8728799276215447945','//stevenchen886.blogspot.com/2018/08/hough-transform.html','8728799276215447945');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '8728799276215447945', 'title': '消失的密室', 'url': 'http://stevenchen886.blogspot.com/2018/08/hough-transform.html', 'canonicalUrl': 'http://stevenchen886.blogspot.com/2018/08/hough-transform.html', 'homepageUrl': 'http://stevenchen886.blogspot.com/', 'searchUrl': 'http://stevenchen886.blogspot.com/search', 'canonicalHomepageUrl': 'http://stevenchen886.blogspot.com/', 'blogspotFaviconUrl': 'http://stevenchen886.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'zh-TW', 'localeUnderscoreDelimited': 'zh_tw', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22消失的密室 - Atom\x22 href\x3d\x22http://stevenchen886.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22消失的密室 - RSS\x22 href\x3d\x22http://stevenchen886.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22消失的密室 - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/8728799276215447945/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22消失的密室 - Atom\x22 href\x3d\x22http://stevenchen886.blogspot.com/feeds/5260603964117315453/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-6365861349836134', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/864213505-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/fdcaa2d401175e0a', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': '取得連結', 'key': 'link', 'shareMessage': '取得連結', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': '分享到 Facebook', 'target': 'facebook'}, {'name': 'BlogThis&#65281;', 'key': 'blogThis', 'shareMessage': 'BlogThis&#65281;', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': '分享到 Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': '分享到 Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': '分享到 Google+', 'target': 'googleplus'}, {'name': '以電子郵件傳送', 'key': 'email', 'shareMessage': '以電子郵件傳送', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27zh_TW\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': '閱讀完整內容', 'pageType': 'item', 'postId': '5260603964117315453', 'postImageThumbnailUrl': 'https://2.bp.blogspot.com/-ZC7fGTx-ajM/W62cAoZIHWI/AAAAAAAAEIU/HL4Yr-4M30U6B3KEDjmHXAyXUWOq9kdHwCLcBGAs/s72-c/edge_type.png', 'postImageUrl': 'https://2.bp.blogspot.com/-ZC7fGTx-ajM/W62cAoZIHWI/AAAAAAAAEIU/HL4Yr-4M30U6B3KEDjmHXAyXUWOq9kdHwCLcBGAs/s400/edge_type.png', 'pageName': '邊緣檢測&#65306;Canny edge detection algorithm', 'pageTitle': '消失的密室: 邊緣檢測&#65306;Canny edge detection algorithm'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': '編輯', 'linkCopiedToClipboard': '已將連結複製到剪貼簿&#65281;', 'ok': '確定', 'postLink': '文章連結'}}, {'name': 'template', 'data': {'name': 'Ethereal', 'localizedName': '輕柔雅緻', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'blossoms1Blue', 'variantId': 'blossoms1Blue'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': '邊緣檢測&#65306;Canny edge detection algorithm', 'description': ' 邊緣檢測 的目的是標識數位圖像中亮度變化明顯的點&#12290; 圖像屬性中的顯著變化通常反映了屬性的重要事件和變化&#12290;這些包括   &#65288;i&#65289;深度上的不連續&#12289;   &#65288;ii&#65289;表面方向不連續&#12289;   &#65288;iii&#65289;物質屬性變化 和   &#65288;iv&#65289;場景照明變化&#12290;&#160;   邊緣檢測是圖像處理和電腦視覺中&#65292;尤其是特...', 'featuredImage': 'https://2.bp.blogspot.com/-ZC7fGTx-ajM/W62cAoZIHWI/AAAAAAAAEIU/HL4Yr-4M30U6B3KEDjmHXAyXUWOq9kdHwCLcBGAs/s400/edge_type.png', 'url': 'http://stevenchen886.blogspot.com/2018/08/hough-transform.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 5260603964117315453}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2', 'crosscol', document.getElementById('BlogSearch2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'useNgc': true, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/4140013337-lbx__zh_tw.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_WikipediaView', new _WidgetInfo('Wikipedia1', 'sidebar-left-1', document.getElementById('Wikipedia1'), {'title': 'Wikipedia', 'language': 'zh', 'noResultsFoundMsg': '找不到相符的搜尋結果&#12290;', 'enterTextMsg': '請輸入要搜尋的文字&#12290;', 'moreMsg': '更多 &#187;', 'searchResultsMsg': '搜尋結果', 'fetchingErrorMsg': '發生一個錯誤&#12290; 請再試一次&#12290;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-left-1', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': '載入中\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label2', 'sidebar-left-1', document.getElementById('Label2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label3', 'footer-1', document.getElementById('Label3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+
+<iframe name="oauth2relay787292862" id="oauth2relay787292862" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/postmessageRelay(1).html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><link type="text/css" rel="stylesheet" href="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/368954415-lightbox_bundle.css"><script type="text/javascript" src="./消失的密室_ 邊緣檢測：Canny edge detection algorithm_files/4140013337-lbx__zh_tw.js.下載"></script></body></html>

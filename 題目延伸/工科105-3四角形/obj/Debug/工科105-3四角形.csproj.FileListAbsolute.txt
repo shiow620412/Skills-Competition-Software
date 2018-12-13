@@ -1,0 +1,7 @@
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\bin\Debug\工科105-3四角形.exe.config
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\bin\Debug\工科105-3四角形.exe
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\bin\Debug\工科105-3四角形.pdb
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\obj\Debug\工科105-3四角形.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\obj\Debug\工科105-3四角形.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\obj\Debug\工科105-3四角形.exe
+C:\Users\Wind\Desktop\題目延伸\工科105-3四角形\obj\Debug\工科105-3四角形.pdb

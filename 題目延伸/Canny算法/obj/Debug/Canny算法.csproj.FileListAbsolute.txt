@@ -1,0 +1,10 @@
+C:\Users\Wind\Desktop\題目延伸\Canny算法\bin\Debug\Canny算法.exe.config
+C:\Users\Wind\Desktop\題目延伸\Canny算法\bin\Debug\Canny算法.exe
+C:\Users\Wind\Desktop\題目延伸\Canny算法\bin\Debug\Canny算法.pdb
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.Form1.resources
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.Properties.Resources.resources
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.csproj.GenerateResource.cache
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.exe
+C:\Users\Wind\Desktop\題目延伸\Canny算法\obj\Debug\Canny算法.pdb

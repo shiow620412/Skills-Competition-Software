@@ -1,0 +1,6 @@
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-1\bin\Debug\LionCup107-1.exe.config
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-1\bin\Debug\LionCup107-1.exe
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-1\bin\Debug\LionCup107-1.pdb
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-1\obj\Debug\LionCup107-1.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-1\obj\Debug\LionCup107-1.exe
+C:\Users\DavidHsu\Desktop\LionCup\LionCup107-1\obj\Debug\LionCup107-1.pdb

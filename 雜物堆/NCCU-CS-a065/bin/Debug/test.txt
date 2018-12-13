@@ -1,0 +1,22 @@
+¿é¥X
+Japan South_Korea China Iraq
+Iran Chinese_Taipei Hong_Kong Macow
+Japan 0 0 South_Korea
+Japan 3 0 China
+Japan 2 0 Iraq
+South_Korea 2 0 China
+South_Korea 1 1 Iraq
+China 0 2 Iraq
+Iran 8 0 Chinese_Taipei
+Iran 5 0 Hong_Kong
+Iran 10 0 Macow
+Chinese_Taipei 0 5 Hong_Kong
+Chinese_Taipei 3 0 Macow
+Hong_Kong 2 0 Macow
+
+¿é¥X
+A1 Japan
+A2 South_Korea
+B1 Iran
+B2 Hong_Kong
+BEST3 Iraq

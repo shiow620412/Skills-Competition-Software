@@ -1,0 +1,10 @@
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\bin\Debug\模擬練習101-04.exe.config
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\bin\Debug\模擬練習101-04.exe
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\bin\Debug\模擬練習101-04.pdb
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101_04.Form1.resources
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101_04.Properties.Resources.resources
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101-04.csproj.GenerateResource.cache
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101-04.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101-04.exe
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101-04.pdb
+C:\Users\Wind\Desktop\模擬練習2\模擬練習101-04\obj\Debug\模擬練習101-04.csprojAssemblyReference.cache

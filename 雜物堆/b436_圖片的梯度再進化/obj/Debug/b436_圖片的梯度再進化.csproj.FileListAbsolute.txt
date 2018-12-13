@@ -1,0 +1,9 @@
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\bin\Debug\b436_圖片的梯度再進化.exe.config
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\bin\Debug\b436_圖片的梯度再進化.exe
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\bin\Debug\b436_圖片的梯度再進化.pdb
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\obj\Debug\b436_圖片的梯度再進化.csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\obj\Debug\b436_圖片的梯度再進化.Form1.resources
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\obj\Debug\b436_圖片的梯度再進化.Properties.Resources.resources
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\obj\Debug\b436_圖片的梯度再進化.csproj.GenerateResource.Cache
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\obj\Debug\b436_圖片的梯度再進化.exe
+C:\Users\DavidHsu\Desktop\b436_圖片的梯度再進化\obj\Debug\b436_圖片的梯度再進化.pdb

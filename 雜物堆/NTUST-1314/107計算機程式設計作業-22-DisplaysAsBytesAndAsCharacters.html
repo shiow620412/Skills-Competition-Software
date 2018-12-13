@@ -1,0 +1,139 @@
+
+<!-- saved from url=(0070)http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/problem.php?id=1314 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters</title>
+	<link rel="stylesheet" href="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/hoj.css" type="text/css">
+     <link rel="next" href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/submitpage.php?id=1314">
+</head>
+<body>
+<div id="wrapper">
+	<div id="head">
+<h2><img id="logo" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/logo.png"><span class="red">NTUST CSIE Online Judge</span></h2>
+</div><!--end head-->
+<div id="subhead">
+	  <div id="menu" class="navbar">
+	  		<a class="btn" href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/"><i class="icon-home"></i>
+		Home						
+		</a>
+		
+		<!--<a class='btn ' href="bbs.php">
+		<i class="icon-comment"></i>Web Board</a>-->
+		<a class="btn " href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/problemset.php">
+		<i class="icon-question-sign"></i>ProblemSet</a>
+		
+	  <!-- <a  class='btn ' href="submitpage.php">
+		<i class="icon-pencil"></i>编辑器</a>
+		-->
+		<a class="btn " href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/status.php">
+		<i class="icon-check"></i>Status</a>
+		
+		<a class="btn " href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/ranklist.php">
+		<i class="icon-signal"></i>Ranklist</a>
+		
+		<a class="btn " href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/contest.php">
+		<i class="icon-fire"></i>Contest</a>
+		
+		<a class="btn " href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/recent-contest.php">
+		<i class="icon-share"></i>Recent</a>
+		
+		<a class="btn " href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/faqs.php">
+                <i class="icon-info-sign"></i>F.A.Qs</a>
+		
+			</div><!--end menu-->
+<div id="profile">
+<script src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/profile.php"></script><a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/loginpage.php">Login</a>&nbsp;<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/registerpage.php">Register</a>&nbsp;
+</div><!--end profile-->
+</div><!--end subhead-->
+<div id="broadcast" class="container">
+<marquee id="broadcast" scrollamount="1" direction="up" scrolldelay="250" onmouseover="this.stop()" onmouseout="this.start()" ;="">
+  Hello National Taiwan University of Science and Technology!</marquee>
+</div>
+<br>
+
+<div id="main">
+	
+	<title>Problem 1314. -- 107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters</title><center><h2>1314: 107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters</h2><span class="green">Time Limit: </span>1 Sec&nbsp;&nbsp;<span class="green">Memory Limit: </span>128 MB<br><span class="green">Submit: </span>39&nbsp;&nbsp;<span class="green">Solved: </span>6<br>[<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/submitpage.php?id=1314">Submit</a>][<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/problemstatus.php?id=1314">Status</a>][<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/bbs.php?pid=1314">Web Board</a>]</center><h2>Description</h2><div class="content"><div>輸入一串文字，依照格式輸出Bytes和Characters</div>
+<p></p></div><h2>Input</h2><div class="content"><div>輸入一串文字，輸入長度介於1~1000之間</div>
+<p></p></div><h2>Output</h2><div class="content"><div>依照範例格式輸出Bytes和Characters</div>
+<p></p></div><h2>Sample Input</h2>
+			<pre class="content"><span class="sampledata">0123456789
+printf("hello world");
+#include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; int main() {int a = 0; printf("%d",a); return 0;}</span></pre><h2>Sample Output</h2>
+			<pre class="content"><span class="sampledata">Offset             Bytes             Characters
+------ ----------------------------- ----------
+     0 30 31 32 33 34 35 36 37 38 39 0123456789
+Offset             Bytes             Characters
+------ ----------------------------- ----------
+     0 70 72 69 6E 74 66 28 22 68 65 printf("he
+    10 6C 6C 6F 20 77 6F 72 6C 64 22 llo world"
+    20 29 3B                         );        
+Offset             Bytes             Characters
+------ ----------------------------- ----------
+     0 23 69 6E 63 6C 75 64 65 20 3C #include &lt;
+    10 73 74 64 69 6F 2E 68 3E 20 23 stdio.h&gt; #
+    20 69 6E 63 6C 75 64 65 20 3C 73 include &lt;s
+    30 74 64 6C 69 62 2E 68 3E 20 69 tdlib.h&gt; i
+    40 6E 74 20 6D 61 69 6E 28 29 20 nt main() 
+    50 7B 69 6E 74 20 61 20 3D 20 30 {int a = 0
+    60 3B 20 70 72 69 6E 74 66 28 22 ; printf("
+    70 25 64 22 2C 61 29 3B 20 72 65 %d",a); re
+    80 74 75 72 6E 20 30 3B 7D       turn 0;}  </span></pre><h2>HINT</h2>
+			<div class="content"><p></p></div><h2>Source</h2>
+			<div class="content"><p><a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/problemset.php?search="></a></p></div><center>[<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/submitpage.php?id=1314">Submit</a>][<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/problemstatus.php?id=1314">Status</a>][<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/bbs.php?pid=1314">Web Board</a>]</center><div id="foot">
+	<span class="center">
+	<!-- FC2計數器 開始 -->
+	<script language="javascript" type="text/javascript" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/counter.php"></script><script type="text/javascript" language="javascript" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/counter_js.php" charset="UTF-8"></script><a href="http://counter.fc2.com/" target="_blank" onmouseover="_FC2COUNTER89418249_0.show_graph(event);" onmouseout="_FC2COUNTER89418249_0.hide_graph(event);"><span><nobr><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/l.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/2.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/6.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/3.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/7.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/3.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/r.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"></nobr><span></span></span></a>
+<noscript><img src="http://counter1.fc2.com/counter_img.php?id=89418249" /></noscript>
+	<!-- FC2計數器 結束 -->
+	<br><br>
+	<!-- FC2計數器 開始 -->
+	在線訪客人數<script language="javascript" type="text/javascript" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/views.php"></script><script type="text/javascript" language="javascript" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/views_js.php" charset="UTF-8"></script><a href="http://counter.fc2.com/" target="_blank"><span><nobr><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0(1).gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0(1).gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0(1).gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/0(1).gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"><img border="0" src="./107計算機程式設計作業-22-DisplaysAsBytesAndAsCharacters_files/1.gif" alt="FC2無料カウンター" "="" title="FC2無料カウンター" style="display:inline;margin:0px;padding:0px;border:none;"></nobr><span></span></span></a>
+<noscript><img src="http://counter1.fc2.com/counter_now.php?id=89418249" /></noscript>
+	<!-- FC2計數器 結束 -->
+			<!--<a href=setlang.php?lang=ko>한국어</a>&nbsp;-->
+		<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/setlang.php?lang=cn">中文</a>&nbsp;
+		<!--<a href=setlang.php?lang=fa>فارسی</a>&nbsp;-->
+		<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/setlang.php?lang=en">English</a>&nbsp;
+		<!--<a href=setlang.php?lang=th>ไทย</a>-->	<br>
+		
+	
+		Anything about the Problems, Please Contact Admin::<a href="mailto:yajinyee0306@gmail.com">yajinyee0306</a> or <a href="mailto:tobyreallygameac@gmail.com%3E">tobygameac</a>
+		
+	<!--	<script type="text/javascript" charset="utf-8">
+		(function(){
+		  var _w = 86 , _h = 50;
+		  var param = {
+			url:location.href,
+			type:'6',
+			count:'1', /**是否显示分享数，1显示(可选)*/
+			appkey:'', /**您申请的应用appkey,显示分享来源(可选)*/
+			title:'', /**分享的文字内容(可选，默认为所在页面的title)*/
+			pic:'', /**分享图片的路径(可选)*/
+			ralateUid:'', /**关联用户的UID，分享微博会@该用户(可选)*/
+			language:'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+			rnd:new Date().valueOf()
+		  }
+		  var temp = [];
+		  for( var p in param ){
+			temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
+		  }
+		  document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
+		})()
+	</script>-->
+		<br>
+		All Copyright Reserved 2010-2014 <a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/">NTUST CSIE Online Judge</a> TEAM<br>
+		<a href="http://gamelab.csie.ntust.edu.tw/NTUST/JudgeOnline/gpl-2.0.txt"><span class="green">GPL2.0</span></a> 2003-2014 <a href="https://github.com/zhblue/hustoj">HUSTOJ Project</a> TEAM<br>
+		
+     	
+	
+</span>
+
+</div><!--end foot-->
+</div><!--end main-->
+</div><!--end wrapper-->
+
+
+<!--not cached-->
+
+</body></html>

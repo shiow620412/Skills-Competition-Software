@@ -1,0 +1,7 @@
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\bin\Debug\NCCU-CS-a073.exe.config
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\bin\Debug\NCCU-CS-a073.exe
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\bin\Debug\NCCU-CS-a073.pdb
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\obj\Debug\NCCU-CS-a073.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\obj\Debug\NCCU-CS-a073.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\obj\Debug\NCCU-CS-a073.exe
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a073\obj\Debug\NCCU-CS-a073.pdb

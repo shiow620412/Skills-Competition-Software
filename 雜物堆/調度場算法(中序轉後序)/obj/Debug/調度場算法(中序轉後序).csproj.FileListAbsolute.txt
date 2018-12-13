@@ -1,0 +1,6 @@
+C:\Users\DavidHsu\Desktop\調度場算法(中序轉後序)\bin\Debug\調度場算法(中序轉後序).exe.config
+C:\Users\DavidHsu\Desktop\調度場算法(中序轉後序)\bin\Debug\調度場算法(中序轉後序).exe
+C:\Users\DavidHsu\Desktop\調度場算法(中序轉後序)\bin\Debug\調度場算法(中序轉後序).pdb
+C:\Users\DavidHsu\Desktop\調度場算法(中序轉後序)\obj\Debug\調度場算法(中序轉後序).csprojResolveAssemblyReference.cache
+C:\Users\DavidHsu\Desktop\調度場算法(中序轉後序)\obj\Debug\調度場算法(中序轉後序).exe
+C:\Users\DavidHsu\Desktop\調度場算法(中序轉後序)\obj\Debug\調度場算法(中序轉後序).pdb

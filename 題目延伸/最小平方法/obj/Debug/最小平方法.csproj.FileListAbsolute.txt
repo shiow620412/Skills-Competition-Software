@@ -1,0 +1,10 @@
+C:\Users\Wind\Desktop\題目延伸\最小平方法\bin\Debug\最小平方法.exe.config
+C:\Users\Wind\Desktop\題目延伸\最小平方法\bin\Debug\最小平方法.exe
+C:\Users\Wind\Desktop\題目延伸\最小平方法\bin\Debug\最小平方法.pdb
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.Form1.resources
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.Properties.Resources.resources
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.csproj.GenerateResource.cache
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.exe
+C:\Users\Wind\Desktop\題目延伸\最小平方法\obj\Debug\最小平方法.pdb

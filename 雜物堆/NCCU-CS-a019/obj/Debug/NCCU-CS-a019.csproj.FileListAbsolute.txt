@@ -1,0 +1,7 @@
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\bin\Debug\NCCU-CS-a019.exe.config
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\bin\Debug\NCCU-CS-a019.exe
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\bin\Debug\NCCU-CS-a019.pdb
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\obj\Debug\NCCU-CS-a019.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\obj\Debug\NCCU-CS-a019.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\obj\Debug\NCCU-CS-a019.exe
+C:\Users\Wind\Desktop\雜物堆\NCCU-CS-a019\obj\Debug\NCCU-CS-a019.pdb

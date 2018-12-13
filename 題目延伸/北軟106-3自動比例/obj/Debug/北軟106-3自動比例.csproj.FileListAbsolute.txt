@@ -1,0 +1,10 @@
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\bin\Debug\北軟106-3自動比例.exe.config
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\bin\Debug\北軟106-3自動比例.exe
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\bin\Debug\北軟106-3自動比例.pdb
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106-3自動比例.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106_3自動比例.Form1.resources
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106_3自動比例.Properties.Resources.resources
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106-3自動比例.csproj.GenerateResource.cache
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106-3自動比例.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106-3自動比例.exe
+C:\Users\Wind\Desktop\題目延伸\北軟106-3自動比例\obj\Debug\北軟106-3自動比例.pdb

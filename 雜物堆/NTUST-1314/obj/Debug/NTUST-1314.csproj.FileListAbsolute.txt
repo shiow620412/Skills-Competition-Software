@@ -1,0 +1,7 @@
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\bin\Debug\NTUST-1314.exe.config
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\bin\Debug\NTUST-1314.exe
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\bin\Debug\NTUST-1314.pdb
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\obj\Debug\NTUST-1314.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\obj\Debug\NTUST-1314.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\obj\Debug\NTUST-1314.exe
+C:\Users\Wind\Desktop\雜物堆\NTUST-1314\obj\Debug\NTUST-1314.pdb

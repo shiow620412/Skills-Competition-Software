@@ -1,0 +1,9 @@
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\bin\Debug\Prewitt算法.exe.config
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\bin\Debug\Prewitt算法.exe
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\bin\Debug\Prewitt算法.pdb
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\obj\Debug\Prewitt算法.csprojAssemblyReference.cache
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\obj\Debug\Prewitt算法.Properties.Resources.resources
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\obj\Debug\Prewitt算法.csproj.GenerateResource.cache
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\obj\Debug\Prewitt算法.csproj.CoreCompileInputs.cache
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\obj\Debug\Prewitt算法.exe
+C:\Users\Wind\Desktop\題目延伸\Prewitt算法\obj\Debug\Prewitt算法.pdb
