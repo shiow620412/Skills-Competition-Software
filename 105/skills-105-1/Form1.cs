@@ -21,6 +21,7 @@ namespace skills_105_1
         {
             List<TextBox> t = Controls.OfType<TextBox>().ToList();
             t.ForEach(x => x.Clear());
+            MessageBox.Show((-3 % -4).ToString());
         }
 
         private void button1_Click(object sender, EventArgs e)
